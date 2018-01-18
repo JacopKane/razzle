@@ -30,7 +30,7 @@ This will pretty print webpack errors to your console. It is mean to be used wit
 
 
 ```js
-const FriendlyErrorsPlugin = require('razzle-dev-utils/FriendlyErrorsPlugin');
+const FriendlyErrorsPlugin = require('razzle-dev-utils-babel-7/FriendlyErrorsPlugin');
 
 module.exports = {
   // ...
@@ -51,7 +51,7 @@ module.exports = {
 Pretty print an array of errors with a message. Good for CI's.
 
 ```js
-const printErrors = require('razzle-dev-utils/printErrors');
+const printErrors = require('razzle-dev-utils-babel-7/printErrors');
 
 try {
   // do something

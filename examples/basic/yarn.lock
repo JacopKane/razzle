@@ -5108,7 +5108,7 @@ raw-body@2.3.2:
 
 razzle-dev-utils@^0.8.7:
   version "0.8.7"
-  resolved "https://registry.yarnpkg.com/razzle-dev-utils/-/razzle-dev-utils-0.8.7.tgz#7fa377bb2b27214b3f3c940a24f1b7d97a34b252"
+  resolved "https://registry.yarnpkg.com/razzle-dev-utils-babel-7/-/razzle-dev-utils-0.8.7.tgz#7fa377bb2b27214b3f3c940a24f1b7d97a34b252"
   dependencies:
     chalk "1.1.3"
     react-dev-utils "4.1.0"
