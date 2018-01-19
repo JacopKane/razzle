@@ -1,6 +1,6 @@
 {
   "name": "razzle-examples-with-react-loadable",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "license": "MIT",
   "scripts": {
     "start": "razzle start",
