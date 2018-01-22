@@ -1,5 +1,5 @@
 {
-  "name": "create-razzle-app",
+  "name": "create-razzle-app-babel-7",
   "version": "0.8.7",
   "description": "Create UNIVERSAL React, Preact, and Inferno apps in one command",
   "main": "index.js",
