@@ -7,7 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 const AssetsPlugin = require('assets-webpack-plugin');
 const StartServerPlugin = require('start-server-webpack-plugin');
-const FriendlyErrorsPlugin = require('razzle-dev-utils/FriendlyErrorsPlugin');
+const FriendlyErrorsPlugin = require('razzle-dev-utils-babel-7/FriendlyErrorsPlugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -363,7 +363,7 @@ module.exports = (
           // the default path. If you are doing some vendor bundling, you'll need to require the razzle/polyfills
           // on your own.
           !!dotenv.raw.REACT_BUNDLE_PATH && require.resolve('./polyfills'),
-          require.resolve('razzle-dev-utils/webpackHotDevClient'),
+          require.resolve('razzle-dev-utils-babel-7/webpackHotDevClient'),
           paths.appClientIndexJs,
         ].filter(Boolean),
       };
