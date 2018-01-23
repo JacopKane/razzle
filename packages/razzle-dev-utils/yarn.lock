@@ -412,7 +412,7 @@ querystringify@~1.0.0:
 
 react-dev-utils-babel-7@^6.0.1:
   version "6.0.1"
-  resolved "https://registry.npmjs.org/react-dev-utils-babel-7/-/react-dev-utils-babel-7-6.0.1.tgz#573488ba7e2ae1cbc6c9cd760e26d05b1b09c2bc"
+  resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-babel-7-6.0.1.tgz#573488ba7e2ae1cbc6c9cd760e26d05b1b09c2bc"
   dependencies:
     "@babel/code-frame" "7.0.0-beta.37"
     address "1.0.3"
