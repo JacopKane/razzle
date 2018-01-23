@@ -1,6 +1,6 @@
 {
   "name": "razzle-babel-7",
-  "version": "0.9.0-0",
+  "version": "0.9.0",
   "description": "Build isomorphic Javascript applications with ease.",
   "repository": "git@github.com:jaredpalmer/razzle.git",
   "author": "Jared Palmer <jared@palmer.net>",
@@ -55,7 +55,7 @@
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "^2.0.6",
     "promise": "^8.0.1",
-    "razzle-dev-utils-babel-7": "^0.9.0-0",
+    "razzle-dev-utils-babel-7": "^0.9.0",
     "react-dev-utils": "^6.0.0-next.9754a231",
     "react-error-overlay": "^5.0.0-next.9754a231",
     "react-scripts": "^2.0.0-next.9754a231",
