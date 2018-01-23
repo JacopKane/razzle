@@ -6426,7 +6426,7 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-razzle-dev-utils-babel-7@^0.8.8-y.2:
+razzle-dev-utils-babel-7@^0.8.8-y.3:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/razzle-dev-utils-babel-7/-/razzle-dev-utils-babel-7-0.8.8.tgz#018cfe233b24f78b9fb088da698acf277ff7f07e"
   dependencies:
