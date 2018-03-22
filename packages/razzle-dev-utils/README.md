@@ -1,4 +1,4 @@
-# razzle-dev-utils
+# razzle-dev-utils-temp
 
 This package includes some utilties used by [Razzle](https://github/com/palmerhq/razzle)
 
@@ -30,7 +30,7 @@ This will pretty print webpack errors to your console. It is mean to be used wit
 
 
 ```js
-const FriendlyErrorsPlugin = require('razzle-dev-utils/FriendlyErrorsPlugin');
+const FriendlyErrorsPlugin = require('razzle-dev-utils-temp/FriendlyErrorsPlugin');
 
 module.exports = {
   // ...
@@ -51,7 +51,7 @@ module.exports = {
 Pretty print an array of errors with a message. Good for CI's.
 
 ```js
-const printErrors = require('razzle-dev-utils/printErrors');
+const printErrors = require('razzle-dev-utils-temp/printErrors');
 
 try {
   // do something

@@ -86,8 +86,8 @@ shell.exec('yarn link', {
 });
 logTask('create-razzle-app');
 shell.exec('yarn link', {
-  cwd: path.join(process.cwd(), 'packages', 'razzle-dev-utils'),
+  cwd: path.join(process.cwd(), 'packages', 'razzle-dev-utils-temp'),
 });
-logTask('razzle-dev-utils');
+logTask('razzle-dev-utils-temp');
 
 console.log('\n✅  strapped\n');
