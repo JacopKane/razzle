@@ -1,11 +1,13 @@
 {
   "name": "razzle-dev-utils-temp",
-  "version": "0.8.16",
+  "version": "0.8.17",
   "description": "Utilities and helpers for Razzle",
   "author": "Jared Palmer <jared@palmer.net>",
   "repository": "git@github.com:jaredpalmer/razzle.git",
   "license": "MIT",
   "files": [
+    "checkIfRazzleConfigExists.js",
+    "loadRazzleConfig.js",
     "logger.js",
     "printErrors.js",
     "FriendlyErrorsPlugin.js",
