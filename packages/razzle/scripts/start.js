@@ -8,9 +8,10 @@ const paths = require('../config/paths');
 const createConfig = require('../config/createConfig');
 const devServer = require('webpack-dev-server');
 const printErrors = require('razzle-dev-utils/printErrors');
-const clearConsole = require('react-dev-utils/clearConsole');
 const logger = require('razzle-dev-utils/logger');
 const setPorts = require('razzle-dev-utils/setPorts');
+const loadRazzleConfig = require('razzle-dev-utils/loadRazzleConfig');
+const checkIfRazzleConfigExists = require('razzle-dev-utils/checkIfRazzleConfigExists');
 
 process.noDeprecation = true; // turns off that loadQuery clutter.
 
@@ -25,18 +26,10 @@ function main() {
   // FriendlyErrorsPlugin during compilation, so the user has immediate feedback.
   // clearConsole();
   logger.start('Compiling...');
-  let razzle = {};
 
-  // Check for razzle.config.js file
-  if (fs.existsSync(paths.appRazzleConfig)) {
-    try {
-      razzle = require(paths.appRazzleConfig);
-    } catch (e) {
-      clearConsole();
-      logger.error('Invalid razzle.config.js file.', e);
-      process.exit(1);
-    }
-  }
+  const razzle = checkIfRazzleConfigExists(paths.appRazzleConfig)
+    ? loadRazzleConfig(paths.appRazzleConfig)
+    : {};
 
   // Delete assets.json to always have a manifest up to date
   fs.removeSync(paths.appManifest);

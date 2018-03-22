@@ -25,6 +25,8 @@ const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 const measureFileSizesBeforeBuild =
   FileSizeReporter.measureFileSizesBeforeBuild;
 const printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;
+const loadRazzleConfig = require('razzle-dev-utils/loadRazzleConfig');
+const checkIfRazzleConfigExists = require('razzle-dev-utils/checkIfRazzleConfigExists');
 
 // First, read the current file sizes in build directory.
 // This lets us display how much they changed later.
@@ -70,13 +72,9 @@ measureFileSizesBeforeBuild(paths.appBuildPublic)
   );
 
 function build(previousFileSizes) {
-  // Check if razzle.config.js exists
-  let razzle = {};
-  try {
-    razzle = require(paths.appRazzleConfig);
-    /* eslint-disable no-empty */
-  } catch (e) {}
-  /* eslint-enable */
+  const razzle = checkIfRazzleConfigExists(paths.appRazzleConfig)
+    ? loadRazzleConfig(paths.appRazzleConfig)
+    : {};
 
   if (razzle.clearConsole === false || !!razzle.host || !!razzle.port) {
     logger.warn(`Specifying options \`port\`, \`host\`, and \`clearConsole\` in razzle.config.js has been deprecated. 
