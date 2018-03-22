@@ -1,6 +1,6 @@
 'use strict';
 
-const logger = require('razzle-dev-utils/logger');
+const logger = require('razzle-dev-utils-temp/logger');
 const clearConsole = require('react-dev-utils/clearConsole');
 
 module.exports = function(appRazzleConfigPath, shouldClearConsole) {

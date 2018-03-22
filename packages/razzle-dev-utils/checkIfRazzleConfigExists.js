@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const logger = require('razzle-dev-utils/logger');
+const logger = require('razzle-dev-utils-temp/logger');
 
 // Check for razzle.config.js file
 module.exports = function(appRazzleConfigPath) {

@@ -18,15 +18,15 @@ const fs = require('fs-extra');
 const chalk = require('chalk');
 const paths = require('../config/paths');
 const createConfig = require('../config/createConfig');
-const printErrors = require('razzle-dev-utils/printErrors');
-const logger = require('razzle-dev-utils/logger');
+const printErrors = require('razzle-dev-utils-temp/printErrors');
+const logger = require('razzle-dev-utils-temp/logger');
 const FileSizeReporter = require('react-dev-utils/FileSizeReporter');
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 const measureFileSizesBeforeBuild =
   FileSizeReporter.measureFileSizesBeforeBuild;
 const printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;
-const loadRazzleConfig = require('razzle-dev-utils/loadRazzleConfig');
-const checkIfRazzleConfigExists = require('razzle-dev-utils/checkIfRazzleConfigExists');
+const loadRazzleConfig = require('razzle-dev-utils-temp/loadRazzleConfig');
+const checkIfRazzleConfigExists = require('razzle-dev-utils-temp/checkIfRazzleConfigExists');
 
 // First, read the current file sizes in build directory.
 // This lets us display how much they changed later.

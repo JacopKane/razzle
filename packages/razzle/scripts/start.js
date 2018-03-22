@@ -7,11 +7,11 @@ const webpack = require('webpack');
 const paths = require('../config/paths');
 const createConfig = require('../config/createConfig');
 const devServer = require('webpack-dev-server');
-const printErrors = require('razzle-dev-utils/printErrors');
-const logger = require('razzle-dev-utils/logger');
-const setPorts = require('razzle-dev-utils/setPorts');
-const loadRazzleConfig = require('razzle-dev-utils/loadRazzleConfig');
-const checkIfRazzleConfigExists = require('razzle-dev-utils/checkIfRazzleConfigExists');
+const printErrors = require('razzle-dev-utils-temp/printErrors');
+const logger = require('razzle-dev-utils-temp/logger');
+const setPorts = require('razzle-dev-utils-temp/setPorts');
+const loadRazzleConfig = require('razzle-dev-utils-temp/loadRazzleConfig');
+const checkIfRazzleConfigExists = require('razzle-dev-utils-temp/checkIfRazzleConfigExists');
 
 process.noDeprecation = true; // turns off that loadQuery clutter.
 
